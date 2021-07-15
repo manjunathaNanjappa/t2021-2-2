@@ -1,0 +1,41 @@
+using System;
+
+namespace program-1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a single integer :");
+            var a = int.Parse(Console.ReadLine());
+            for(var i=0; i <= a; i++)
+            {
+                if (i % 2 != 0)
+                {
+                    for(var number=1;number<=i;number++)
+                        if (number > 1) {
+                            Console.Write("#" + number);
+                                }
+                    else
+                        Console.Write(number);
+                    
+                }
+                if (i % 2 == 0) {
+                    for(var number=i ;number>=1;number--)
+                        if (number > 1)
+
+                        {
+                            Console.Write( number +"#");
+                        }
+                        else
+                            Console.Write(number);
+
+
+                }
+                Console.WriteLine();
+                
+
+            }
+        }
+    }
+}
