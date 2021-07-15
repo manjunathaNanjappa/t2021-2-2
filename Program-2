@@ -1,0 +1,69 @@
+using System;
+
+namespace program-2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a single integer : ");
+            var a = int.Parse(Console.ReadLine());
+            var b = (a * 2) - 2;
+                for (var i = 0; i <= b; i++)
+                {
+                if (i < a)
+                {
+                    if (i % 2 != 0)
+                    {
+                        for (var number = 1; number <= i; number++)
+                            Console.Write(number);
+
+                    }
+                    if (i % 2 == 0)
+                    {
+                        for (var number = i; number >= 1; number--)
+                            Console.Write(number);
+
+                    }
+                }
+                if (i == a)
+                {
+                    if (i % 2 != 0)
+                    {
+                        for (var number = 1; number < i; number++)
+                            Console.Write(number);
+
+                    }
+                    if (i % 2 == 0)
+                    {
+                        for (var number = i; number > 1; number--)
+                            Console.Write(number);
+
+                    }
+                }
+                if (i > a)
+                {
+                    var c = i - a;
+                    c = i - (2 * c);
+                    if (i % 2 != 0)
+                    {
+                      
+                        for (var number = 1; number <=c ; number++)
+                            Console.Write(number);
+
+                    }
+                    if (i % 2 == 0)
+                    {
+                        
+                        for (var number = c ; number >= 1; number--)
+                            Console.Write(number);
+
+                    }
+                }
+                Console.WriteLine();
+                }
+            
+        }
+    }
+}
